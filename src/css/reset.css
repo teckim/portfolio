@@ -3,6 +3,10 @@ a {
   color: var(--color-primary-B300)
 }
 
+p {
+  margin: 0;
+}
+
 button {
   display: inline-flex;
   border: 0;
