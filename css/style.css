@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--base-text-color);
+  background: var(--base-background-color);
+  font: var(--base-font-size) / var(--base-line-height) var(--base-font-family);
+}
+
+img {
+  max-width: 100%;
+  min-height: 1px;
+  height: auto;
+}
+
+:root {
+  /* colors */
+  --color-black-base: #172b4d;
+  --color-black-light: #344563;
+  --color-primary-B600: #4053fc;
+  --color-primary-B500: #396df2;
+  --color-primary-B400: #6070ff;
+  --color-primary-B300: #7f8cff;
+  --color-neutrals-N800: #172b4d;
+  --color-neutrals-N600: #344563;
+
+  /* base styles */
+  --base-font-family: poppins, 'Helvetica Neue', helvetica, sans-serif;
+  --base-font-size: 1.6rem;
+  --base-line-height: 1.2;
+  --base-text-color: var(--color-neutrals-N600);
+  --base-background-color: #e5e5e5;
+}

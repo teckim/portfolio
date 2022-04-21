@@ -1,0 +1,11 @@
+a {
+  text-decoration: none;
+  color: var(--color-primary-B300)
+}
+
+button {
+  display: inline-flex;
+  border: 0;
+  background: none;
+  padding: 0;
+}
