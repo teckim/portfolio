@@ -1,0 +1,7 @@
+.header {
+  background-color: var(--color-neutrals);
+  background-image: url(../assets/images/header-shapes-mobile.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  border-bottom-left-radius: 75px;
+}
