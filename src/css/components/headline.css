@@ -1,0 +1,32 @@
+.headline {
+  padding: 114px 24px 114px 24px;
+
+  /* background-color: var(--color-neutrals); */
+  display: flex;
+  flex-direction: column;
+}
+
+.headline > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.headline .headline__title {
+  font-weight: var(--font-bold);
+
+  /* color: var(--color-neutrals-N800); */
+  font-size: var(--text-xxxl);
+  line-height: 52px;
+}
+
+.headline .headline__text {
+  line-height: 24px;
+}
+
+.headline .headline__cta {
+  font-weight: var(--font-medium);
+  line-height: 24px;
+}
+
+.headline .headline__social-links > *:not(:last-child) {
+  margin-right: 12px;
+}
