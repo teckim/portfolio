@@ -11,7 +11,7 @@
 
 .button:not(.button--disabled):hover {
   background: var(--color-primary-B400);
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: var(--color-neutrals);
 }
 

@@ -15,6 +15,13 @@
   color: var(--color-neutrals-N800);
 }
 
+.about-me .about-me__subtitle {
+  font-weight: var(--font-medium);
+  font-size: var(--text-base);
+  line-height: 24px;
+  color: var(--color-primary-B300);
+}
+
 .about-me .about-me__actions {
   display: flex;
   flex-direction: column;
