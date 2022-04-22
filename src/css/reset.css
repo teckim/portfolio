@@ -1,0 +1,23 @@
+a {
+  text-decoration: none;
+  color: var(--color-primary-B300)
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+button {
+  display: inline-flex;
+  border: 0;
+  background: none;
+  padding: 0;
+}

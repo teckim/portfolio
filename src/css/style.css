@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--base-font-size);
+}
+
+body {
+  color: var(--base-text-color);
+  background: var(--base-background-color);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  font-family: var(--base-font-family);
+  font-weight: var(--font-regular);
+  margin: 0;
+
+  /* todo: delete this when home page is done */
+  min-height: 1200px;
+}
+
+img {
+  max-width: 100%;
+  min-height: 1px;
+  height: auto;
+}
+
+:root {
+  /* colors */
+  --color-black-base: #172b4d;
+  --color-black-light: #344563;
+  --color-primary-B600: #4053fc;
+  --color-primary-B500: #396df2;
+  --color-primary-B400: #6070ff;
+  --color-primary-B300: #7f8cff;
+  --color-neutrals: #fff;
+  --color-neutrals-N10: #f7f7f9;
+  --color-neutrals-N800: #172b4d;
+  --color-neutrals-N600: #344563;
+
+  /* font weight */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  /* font sizes */
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-md: 18px;
+  --text-xxxl: 40px;
+
+  /* base styles */
+  --base-font-family: poppins, "Helvetica Neue", helvetica, sans-serif;
+  --base-font-size: var(--text-base);
+  --base-line-height: 1.2;
+  --base-text-color: var(--color-neutrals-N600);
+  --base-background-color: var(--color-neutrals-N10);
+}
