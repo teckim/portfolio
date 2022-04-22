@@ -1,0 +1,66 @@
+.about-me .about-me__body {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.about-me .about-me__body > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.about-me .about-me__title h2 {
+  font-weight: var(--font-bold);
+  font-size: var(--text-xxxl);
+  line-height: 52px;
+  color: var(--color-neutrals-N800);
+}
+
+.about-me .about-me__actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me .about-me__actions > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.about-me .about-me__skills-group__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  padding: 0 12px;
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+  color: var(--color-black);
+  line-height: 24px;
+}
+
+.about-me .about-me__skills-list {
+  padding: 12px;
+}
+
+.about-me .about-me__skills-list__item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: var(--color-neutrals-N10);
+  border-radius: 8px;
+}
+
+.about-me .about-me__skills-list__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.about-me .about-me__skills-list__item-image {
+  height: 48px;
+  width: 48px;
+  margin-right: 16px;
+}
+
+.about-me .about-me__skills-list__item-label {
+  font-weight: var(--font-medium);
+  font-size: var(--text-sm);
+  line-height: 20px;
+  color: var(--color-neutrals-N700);
+}
