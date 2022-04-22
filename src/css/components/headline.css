@@ -23,15 +23,9 @@
   line-height: 24px;
 }
 
-.headline .headline__cta {
+.headline .headline__subtitle {
   font-weight: var(--font-medium);
+  font-size: var(--text-base);
   line-height: 24px;
-}
-
-.headline .headline__social-links {
-  display: flex;
-}
-
-.headline .headline__social-links > *:not(:last-child) {
-  margin-right: 12px;
+  color: var(--color-primary-B300);
 }

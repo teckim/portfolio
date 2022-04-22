@@ -1,3 +1,16 @@
 .header {
   background-color: var(--color-neutrals);
 }
+
+.works {
+  padding: 114px 24px;
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr;
+  grid-row-gap: 88px;
+}
+
+.about {
+  padding: 114px 24px;
+  background-color: var(--color-neutrals);
+  border-top-right-radius: 75px;
+}

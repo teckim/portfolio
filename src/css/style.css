@@ -29,26 +29,41 @@ img {
 
 :root {
   /* colors */
+  --color-black: #000;
   --color-black-base: #172b4d;
   --color-black-light: #344563;
+  --color-primary-B50: #ebebff;
+  --color-primary: #2230d2;
   --color-primary-B600: #4053fc;
   --color-primary-B500: #396df2;
   --color-primary-B400: #6070ff;
   --color-primary-B300: #7f8cff;
   --color-neutrals: #fff;
+  --color-neutrals-N5: #5e6c84;
   --color-neutrals-N10: #f7f7f9;
+  --color-neutrals-N40: #dfe1e6;
+  --color-neutrals-N50: #c1c7d0;
+  --color-neutrals-N100: #7a869a;
+  --color-neutrals-N400: #6070ff;
+  --color-neutrals-N700: #253858;
   --color-neutrals-N800: #172b4d;
   --color-neutrals-N600: #344563;
 
   /* font weight */
   --font-regular: 400;
   --font-medium: 500;
+  --font-thick: 600;
   --font-bold: 700;
 
   /* font sizes */
-  --text-sm: 14px;
+  --text-xxxs: 12px;
+  --text-xxs: 12px;
+  --text-xs: 14px;
+  --text-sm: 15px;
   --text-base: 16px;
   --text-md: 18px;
+  --text-lg: 20px;
+  --text-xxl: 32px;
   --text-xxxl: 40px;
 
   /* base styles */
