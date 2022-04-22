@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="./css/elements/button.css" />
     <!-- components -->
     <link rel="stylesheet" href="./css/components/toolbar.css" />
+    <link rel="stylesheet" href="./css/components/social-stack.css" />
     <link rel="stylesheet" href="./css/components/headline.css" />
     <link rel="stylesheet" href="./css/components/project-card.css" />
+    <link rel="stylesheet" href="./css/components/about-me.css" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,8 +51,8 @@
         website. Look through some of my work and experience! If you like what
         you see and have a project you need coded, don’t hestiate to contact me.
       </p>
-      <a class="headline__cta" href="#">LET’S CONNECT</a>
-      <ul class="headline__social-links">
+      <a class="link" href="#">LET’S CONNECT</a>
+      <ul class="social-stack">
         <li>
           <a>
             <img src="./assets/icons/twitter.svg" alt="" />
@@ -70,7 +72,11 @@
     </section>
     <section class="works">
       <div class="project-card">
-        <img class="project-card__image" src="./assets/images/snapshoot-1.jpg" alt="Snapshoot 1" />
+        <img
+          class="project-card__image"
+          src="./assets/images/snapshoot-1.jpg"
+          alt="Snapshoot 1"
+        />
         <div class="project-card__body">
           <div class="project-card__header">
             <h2 class="project-card__header-title">Tonic</h2>
@@ -90,14 +96,16 @@
             <li class="project-card__tags-list-item">javascript</li>
           </ul>
           <div class="project-card__actions">
-            <button class="button">
-              See Project
-            </button>
+            <button class="button" type="button">See Project</button>
           </div>
         </div>
       </div>
       <div class="project-card">
-        <img class="project-card__image" src="./assets/images/snapshoot-2.jpg" alt="Snapshoot 1" />
+        <img
+          class="project-card__image"
+          src="./assets/images/snapshoot-2.jpg"
+          alt="Snapshoot 1"
+        />
         <div class="project-card__body">
           <div class="project-card__header">
             <h2 class="project-card__header-title">Multi-PostStories</h2>
@@ -117,14 +125,16 @@
             <li class="project-card__tags-list-item">javascript</li>
           </ul>
           <div class="project-card__actions">
-            <button class="button">
-              See Project
-            </button>
+            <button class="button" type="button">See Project</button>
           </div>
         </div>
       </div>
       <div class="project-card">
-        <img class="project-card__image" src="./assets/images/snapshoot-3.jpg" alt="Snapshoot 1" />
+        <img
+          class="project-card__image"
+          src="./assets/images/snapshoot-3.jpg"
+          alt="Snapshoot 1"
+        />
         <div class="project-card__body">
           <div class="project-card__header">
             <h2 class="project-card__header-title">Tonic</h2>
@@ -144,14 +154,16 @@
             <li class="project-card__tags-list-item">javascript</li>
           </ul>
           <div class="project-card__actions">
-            <button class="button">
-              See Project
-            </button>
+            <button class="button" type="button">See Project</button>
           </div>
         </div>
       </div>
       <div class="project-card">
-        <img class="project-card__image" src="./assets/images/snapshoot-4.jpg" alt="Snapshoot 1" />
+        <img
+          class="project-card__image"
+          src="./assets/images/snapshoot-4.jpg"
+          alt="Snapshoot 1"
+        />
         <div class="project-card__body">
           <div class="project-card__header">
             <h2 class="project-card__header-title">Multi-Post Stories</h2>
@@ -171,11 +183,100 @@
             <li class="project-card__tags-list-item">javascript</li>
           </ul>
           <div class="project-card__actions">
-            <button class="button">
-              See Project
-            </button>
+            <button class="button" type="button">See Project</button>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about-me">
+        <div class="about-me__body">
+          <div class="about-me__title">
+            <h2>
+              About <br />
+              Myself
+            </h2>
+          </div>
+          <div class="about-me__text">
+            <p>
+              Hello I’m a software developer! I can help you build a product ,
+              feature or website Look through some of my work and experience! If
+              you like what you see and have a project you need coded, don’t
+              hestiate to contact me.
+            </p>
+          </div>
+          <div class="about-me__actions">
+            <a class="link" href="#">LET’S CONNECT</a>
+            <ul class="social-stack social-stack--no-gap">
+              <li>
+                <a class="icon-botton">
+                  <img src="./assets/icons/github.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a class="icon-botton">
+                  <img src="./assets/icons/linkedin.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a class="icon-botton">
+                  <img src="./assets/icons/twitter.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+            <div>
+              <button class="button" type="button">Get my resume</button>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <div class="about-me__skills-group__item">
+              <div>Languages</div>
+              <button class="icon-button" type="button">
+                <img src="./assets/icons/chevron-down.svg" alt="Chevron down icon">
+              </button>
+            </div>
+            <ul class="about-me__skills-list">
+              <li class="about-me__skills-list__item">
+                <div class="about-me__skills-list__item-image">
+                  <img src="./assets/images/js.png" alt="JS">
+                </div>
+                <div class="about-me__skills-list__item-label">JavaScript</div>
+              </li>
+              <li class="about-me__skills-list__item">
+                <div class="about-me__skills-list__item-image">
+                  <img src="./assets/images/html.png" alt="HTML">
+                </div>
+                <div class="about-me__skills-list__item-label">HTML</div>
+              </li>
+              <li class="about-me__skills-list__item">
+                <div class="about-me__skills-list__item-image">
+                  <img src="./assets/images/css.png" alt="CSS">
+                </div>
+                <div class="about-me__skills-list__item-label">CSS</div>
+              </li>
+            </ul>
+          </li>
+          <li><hr></li>
+          <li>
+            <div class="about-me__skills-group__item">
+              <div>Frameworks</div>
+              <button class="icon-button" type="button">
+                <img src="./assets/icons/chevron-right.svg" alt="Chevron down icon">
+              </button>
+            </div>
+          </li>
+          <li><hr></li>
+          <li>
+            <div class="about-me__skills-group__item">
+              <div>Skills</div>
+              <button class="icon-button" type="button">
+                <img src="./assets/icons/chevron-right.svg" alt="Chevron down icon">
+              </button>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
   </body>

@@ -7,6 +7,10 @@ p {
   margin: 0;
 }
 
+h1, h2 {
+  margin: 0;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -14,6 +18,12 @@ ul {
 
 ul > li {
   list-style-type: none;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--color-neutrals-N40);
+  border: none;
 }
 
 button {

@@ -7,3 +7,12 @@
   border-radius: 8px;
   border: 1px solid var(--color-primary-B400);
 }
+
+.icon-botton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+}

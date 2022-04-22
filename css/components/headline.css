@@ -22,16 +22,3 @@
 .headline .headline__text {
   line-height: 24px;
 }
-
-.headline .headline__cta {
-  font-weight: var(--font-medium);
-  line-height: 24px;
-}
-
-.headline .headline__social-links {
-  display: flex;
-}
-
-.headline .headline__social-links > *:not(:last-child) {
-  margin-right: 12px;
-}
