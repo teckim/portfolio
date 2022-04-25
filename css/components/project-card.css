@@ -69,9 +69,7 @@
   border-radius: 8px;
 }
 
-.project-card
-  .project-card__tags-list
-  .project-card__tags-list-item:not(:last-child) {
+.project-card .project-card__tags-list .project-card__tags-list-item:not(:last-child) {
   margin-right: 8px;
 }
 
