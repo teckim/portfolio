@@ -1,47 +1,51 @@
 .contact {
   background-image: url(../../assets/images/contact-form-shapes-mobile.png);
-  background-color:#6070FF;
+  background-color: #6070ff;
   padding: 104px 24px 45px;
   border-top-left-radius: 75px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: right;
+}
 
+.contact .contact__headline {
+  text-align: center;
+  margin-bottom: 45px;
 }
-.contact .contact__headline{
-text-align: center;
-margin-bottom: 45px;
-}
+
 .contact .contact__headline-title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #FFFFFF;
+  color: #fff;
   margin-bottom: 12px;
 }
+
 .contact .contact__headline-text {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color:#EBEBFF;
+  color: #ebebff;
 }
+
 .contact .contact__form {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
+
 .contact .contact__form-input {
-  background: #FFFFFF;
-  border: 1px solid #CFD8DC;
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   min-height: 48px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   margin-bottom: 20px;
 }
+
 .contact .contact__form-button {
   align-self: flex-start;
   padding: 12px 16px;
-  background: #FFFFFF;
+  background: #fff;
   margin-top: 4px;
-
 }
