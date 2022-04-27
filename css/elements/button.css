@@ -28,6 +28,10 @@
   color: var(--color-neutrals-N5);
 }
 
+.button.button--secondary {
+  background: var(--color-neutrals);
+}
+
 .icon-botton {
   display: flex;
   align-items: center;
