@@ -1,6 +1,6 @@
 .contact {
   background-image: url(../../assets/images/contact-form-shapes-mobile.png);
-  background-color: #6070ff;
+  background-color: var(--color-primary-B400);
   padding: 104px 24px 45px;
   border-top-left-radius: 75px;
   background-repeat: no-repeat;
@@ -14,10 +14,10 @@
 }
 
 .contact .contact__headline-title {
-  font-weight: 700;
-  font-size: 40px;
+  font-weight: var(--font-bold);
+  font-size: var(--text-xxxl);
   line-height: 52px;
-  color: #fff;
+  color: var(--color-neutrals);
   margin-bottom: 12px;
 }
 
@@ -25,7 +25,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #ebebff;
+  color: var(--color-primary-B50);
 }
 
 .contact .contact__form {
@@ -34,27 +34,33 @@
 }
 
 .contact .contact__form-input {
-  background: #fff;
-  border: 1px solid #cfd8dc;
+  font-family: var(--base-font-family) !important;
+  font-weight: var(--font-regular);
+  font-size: var(--text-base);
+  line-height: 20px;
+  color: var(--color-neutrals-N800);
+  background: var(--color-neutrals);
+  outline: 1px solid var(--color-base-100);
+  border: none;
   border-radius: 8px;
   min-height: 48px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  color: #172b4d;
-  line-height: 20px;
   padding: 15px 16px;
   margin-bottom: 20px;
 }
 
 .contact .contact__form-input::placeholder {
-  font-size: 14px;
+  font-size: var(--text-sm);
   line-height: 24px;
-  color: #b3bac5;
+  color: var(--color-neutrals-N60);
 }
 
 .contact .contact__form-input:focus-visible {
-  outline: none;
+  outline: 2px solid var(--color-primary-B600);
+  border-color: var(--color-primary);
+}
+
+.contact textarea.contact__form-input {
+  resize: none;
 }
 
 .contact .contact__form-button {
