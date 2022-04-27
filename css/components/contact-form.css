@@ -4,8 +4,8 @@
   padding: 104px 24px 45px;
   border-top-left-radius: 75px;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: right;
+  background-size: 210px auto;
+  background-position: right 21px;
 }
 
 .contact .contact__headline {
@@ -41,16 +41,16 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 17px;
-  color: #172B4D;
+  color: #172b4d;
   line-height: 20px;
-  padding: 15px 16px; 
+  padding: 15px 16px;
   margin-bottom: 20px;
 }
 
 .contact .contact__form-input::placeholder {
   font-size: 14px;
   line-height: 24px;
-  color: #B3BAC5;
+  color: #b3bac5;
 }
 
 .contact .contact__form-input:focus-visible {
