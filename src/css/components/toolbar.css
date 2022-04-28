@@ -28,3 +28,30 @@
   height: 40px;
   width: 40px;
 }
+
+.toolbar .toolbar__links-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .toolbar {
+    height: 72px;
+  }
+
+  .toolbar .toolbar__menu-button {
+    display: none;
+  }
+
+  .toolbar .toolbar__links-list {
+    display: flex;
+  }
+
+  .toolbar .toolbar__links-list-item {
+    height: 100%;
+    padding: 16px;
+  }
+
+  .toolbar .toolbar__links-list-item a {
+    color: var(--color-neutrals-N600);
+  }
+}

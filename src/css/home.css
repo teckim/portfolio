@@ -14,3 +14,14 @@
   background-color: var(--color-neutrals);
   border-top-right-radius: 75px;
 }
+
+@media screen and (min-width: 768px) {
+  .works {
+    padding: 142px 0;
+  }
+
+  .about {
+    padding: 142px 0 134px;
+    border-top-right-radius: 125px;
+  }
+}
