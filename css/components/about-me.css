@@ -15,6 +15,10 @@
   color: var(--color-neutrals-N800);
 }
 
+.about-me .about-me__text {
+  line-height: 24px;
+}
+
 .about-me .about-me__subtitle {
   font-weight: var(--font-medium);
   font-size: var(--text-base);
@@ -70,4 +74,38 @@
   font-size: var(--text-sm);
   line-height: 20px;
   color: var(--color-neutrals-N700);
+}
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+  }
+
+  .about-me .about-me__actions .button {
+    margin-top: 12px;
+  }
+
+  .about-me .about-me__skills-list {
+    display: flex;
+    margin: 0 -6px;
+  }
+
+  .about-me .about-me__skills-list__item {
+    min-width: 120px;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+    margin: 0 6px;
+  }
+
+  .about-me .about-me__skills-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .about-me .about-me__skills-list__item-image {
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
 }
