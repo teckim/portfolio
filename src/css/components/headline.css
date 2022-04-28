@@ -5,11 +5,14 @@
   background-repeat: no-repeat;
   background-position: center right;
   border-bottom-left-radius: 75px;
+}
+
+.headline .headline__wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.headline > *:not(:last-child) {
+.headline .headline__wrapper > *:not(:last-child) {
   margin-bottom: 12px;
 }
 
@@ -28,4 +31,21 @@
   font-size: var(--text-base);
   line-height: 24px;
   color: var(--color-primary-B300);
+}
+
+@media screen and (min-width: 768px) {
+  .headline {
+    background-image: url(../../assets/images/header-shapes-desktop.png);
+    background-size: 1397px auto;
+    background-position: top;
+    border-bottom-left-radius: 125px;
+    padding: 0;
+  }
+
+  .headline .headline__wrapper {
+    justify-content: center;
+    min-height: 846px;
+    max-width: 920px;
+    margin: 0 auto;
+  }
 }

@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./css/components/project-card.css" />
     <link rel="stylesheet" href="./css/components/about-me.css" />
     <link rel="stylesheet" href="./css/components/contact.css" />
+    <!-- utilities -->
+    <link rel="stylesheet" href="./css/utilities/layout.css" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +32,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="toolbar">
+      <div class="toolbar container">
         <div class="toolbar__logo-wrapper">
           <a href="/" class="toolbar__logo">Hakim</a>
         </div>
@@ -38,50 +40,57 @@
           <button class="toolbar__menu-button" type="button">
             <img src="./assets/icons/menu.svg" alt="Menu icon" />
           </button>
+          <ul class="toolbar__links-list">
+            <li class="toolbar__links-list-item"><a href="#">Portfolio</a></li>
+            <li class="toolbar__links-list-item"><a href="#">About</a></li>
+            <li class="toolbar__links-list-item"><a href="#">Contact</a></li>
+          </ul>
         </nav>
       </div>
-      <!-- todo: add nav hore -->
     </header>
     <section class="headline">
-      <h1 class="headline__title">
-        I’m Hakim <br />
-        Glad to see you!
-      </h1>
-      <p class="headline__text">
-        I’m a software developer! I can help you build a product, feature or
-        website. Look through some of my work and experience! If you like what
-        you see and have a project you need coded, don’t hestiate to contact me.
-      </p>
-      <h2 class="headline__subtitle">LET’S CONNECT</h2>
-      <ul class="social-stack">
-        <li>
-          <a>
-            <img src="./assets/icons/twitter.svg" alt="" />
-          </a>
-        </li>
-        <li>
-          <a>
-            <img src="./assets/icons/linkedin.svg" alt="" />
-          </a>
-        </li>
-        <li>
-          <a>
-            <img src="./assets/icons/medium.svg" alt="" />
-          </a>
-        </li>
-        <li>
-          <a>
-            <img src="./assets/icons/github.svg" alt="" />
-          </a>
-        </li>
-        <li>
-          <a>
-            <img src="./assets/icons/angel-list.svg" alt="" />
-          </a>
-        </li>
-      </ul>
+      <div class="headline__wrapper">
+        <h1 class="headline__title">
+          I’m Hakim <br />
+          Glad to see you!
+        </h1>
+        <p class="headline__text">
+          I’m a software developer! I can help you build a product, feature or
+          website. Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don’t hestiate to contact
+          me.
+        </p>
+        <h2 class="headline__subtitle">LET’S CONNECT</h2>
+        <ul class="social-stack">
+          <li>
+            <a>
+              <img src="./assets/icons/twitter.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="./assets/icons/linkedin.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="./assets/icons/medium.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="./assets/icons/github.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="./assets/icons/angel-list.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section class="works">
+    <section class="works container">
       <div class="project-card">
         <img
           class="project-card__image"
@@ -202,7 +211,7 @@
       </div>
     </section>
     <section class="about">
-      <div class="about-me">
+      <div class="about-me container">
         <div class="about-me__body">
           <div class="about-me__title">
             <h2>
@@ -212,7 +221,7 @@
           </div>
           <div class="about-me__text">
             <p>
-              Hello I’m a software developer! I can help you build a product ,
+              Hello I’m a software developer! I can help you build a product,
               feature or website Look through some of my work and experience! If
               you like what you see and have a project you need coded, don’t
               hestiate to contact me.
@@ -313,49 +322,51 @@
     </section>
     <footer class="footer">
       <div class="contact">
-        <div class="contact__headline">
-          <h2 class="contact__headline-title">Contact me</h2>
-          <p class="contact__headline-text">
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d love
-            to help with it
-          </p>
-        </div>
-        <form
-          class="contact__form"
-          action="https://formspree.io/f/mrgjopje"
-          method="post"
-        >
-          <input
-            class="contact__form-input"
-            type="text"
-            placeholder="Your name"
-            name="name"
-            maxlength="30"
-            required
-          />
-          <input
-            class="contact__form-input"
-            type="email"
-            placeholder="Your email"
-            name="email"
-            required
-          />
-          <textarea
-            class="contact__form-input"
-            placeholder="Write your message here"
-            maxlength="500"
-            rows="5"
-            name="message"
-            required
-          ></textarea>
-          <button
-            class="contact__form-button button button--secondary"
-            type="submit"
+        <div class="contact__wrapper">
+          <div class="contact__headline">
+            <h2 class="contact__headline-title">Contact me</h2>
+            <p class="contact__headline-text">
+              If you have an application you are interested in developing, a
+              feature that you need built or a project that needs coding. I’d
+              love to help with it
+            </p>
+          </div>
+          <form
+            class="contact__form"
+            action="https://formspree.io/f/mrgjopje"
+            method="post"
           >
-            Get In Touch
-          </button>
-        </form>
+            <input
+              class="contact__form-input"
+              type="text"
+              placeholder="Your name"
+              name="name"
+              maxlength="30"
+              required
+            />
+            <input
+              class="contact__form-input"
+              type="email"
+              placeholder="Your email"
+              name="email"
+              required
+            />
+            <textarea
+              class="contact__form-input"
+              placeholder="Write your message here"
+              maxlength="500"
+              rows="5"
+              name="message"
+              required
+            ></textarea>
+            <button
+              class="contact__form-button button button--secondary"
+              type="submit"
+            >
+              Get In Touch
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
   </body>

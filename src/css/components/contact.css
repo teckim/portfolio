@@ -1,11 +1,11 @@
 .contact {
-  background-image: url(../../assets/images/contact-form-shapes-mobile.png);
   background-color: var(--color-primary-B400);
-  padding: 104px 24px 45px;
-  border-top-left-radius: 75px;
+  background-image: url(../../assets/images/contact-form-shapes-mobile.png);
   background-repeat: no-repeat;
   background-size: 210px auto;
   background-position: right 21px;
+  padding: 104px 24px 45px;
+  border-top-left-radius: 75px;
 }
 
 .contact .contact__headline {
@@ -22,8 +22,7 @@
 }
 
 .contact .contact__headline-text {
-  font-weight: 400;
-  font-size: 20px;
+  font-size: var(--text-lg);
   line-height: 28px;
   color: var(--color-primary-B50);
 }
@@ -66,4 +65,30 @@
 .contact .contact__form-button {
   align-self: flex-start;
   margin-top: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    background-image: url(../../assets/images/contact-form-shapes-desktop.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: 1290px auto;
+    background-position: center;
+    border-top-left-radius: 125px;
+    padding: 142px 0 127px;
+  }
+
+  .contact .contact__wrapper {
+    max-width: 801px;
+    padding: 0 116px;
+    margin: 0 auto;
+  }
+
+  .contact .contact__form-input {
+    margin-bottom: 28px;
+  }
+
+  .contact .contact__form-button {
+    align-self: center;
+  }
 }
