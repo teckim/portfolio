@@ -22,6 +22,10 @@
   line-height: 52px;
 }
 
+@keyframes slide-in {
+  100% { transform: translateX(0%); }
+}
+
 .headline .headline__text {
   line-height: 24px;
 }
