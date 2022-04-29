@@ -20,8 +20,8 @@
   font-weight: var(--font-bold);
   font-size: var(--text-xxxl);
   line-height: 52px;
-  animation: slide-in 0.5s forwards; 
-  transform: translateX(-100%); 
+  animation: slide-in 0.5s forwards;
+  transform: translateX(-100%);
 }
 
 @keyframes slide-in {
