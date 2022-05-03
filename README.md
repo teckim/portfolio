@@ -8,8 +8,9 @@
 
 - HTML/CSS
 - Linters
+- Github actions
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://teckim.github.io/portfolio)
 
@@ -28,7 +29,7 @@ NPM should be installed
 run `npm install` in the project folder.
 
 ### Usage
-open `index.html`.
+open `src/index.html`.
 
 ## Authors
 
