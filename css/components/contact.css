@@ -24,7 +24,7 @@
 .contact .contact__headline-text {
   font-size: var(--text-lg);
   line-height: 28px;
-  color: var(--color-primary-B50);
+  color: var(--color-neutrals);
 }
 
 .contact .contact__form {
