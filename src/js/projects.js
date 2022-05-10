@@ -1,4 +1,5 @@
 const portfolioSection = document.getElementById('portfolio');
+const appearModal = document.getElementById('modal');
 
 function gentateProjectHtml({
   id, imageName, title, description, technologies,
@@ -40,3 +41,10 @@ const projectsHtml = gentateProjectHtml({
 });
 
 portfolioSection.innerHTML = projectsHtml;
+
+projects.forEach((project,index) => {
+  document.getElementById(`modal-btn-${index}`).addEventListener('click', () => 
+  {
+      appearModal.style.display = "flex";
+  })    
+});
