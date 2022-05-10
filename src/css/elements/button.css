@@ -33,6 +33,10 @@
   background: var(--color-neutrals);
 }
 
+.button .button__icon {
+  margin-left: 14px;
+}
+
 .icon-botton {
   display: flex;
   align-items: center;
