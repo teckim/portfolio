@@ -94,6 +94,11 @@
     position: static;
   }
 
+  .toolbar .toolbar__links-list-container::after,
+  .toolbar .toolbar__links-list-container::after {
+    display: none;
+  }
+
   .toolbar .toolbar__links-list {
     display: flex;
   }
