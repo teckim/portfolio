@@ -40,11 +40,16 @@
           <button class="toolbar__menu-button" type="button">
             <img src="./assets/icons/menu.svg" alt="Menu icon" />
           </button>
-          <ul class="toolbar__links-list">
-            <li class="toolbar__links-list-item"><a href="#portfolio">Portfolio</a></li>
-            <li class="toolbar__links-list-item"><a href="#about">About</a></li>
-            <li class="toolbar__links-list-item"><a href="#contact">Contact</a></li>
-          </ul>
+          <div class="toolbar__links-list-container">
+            <button class="toolbar__close-button" type="button">
+              <img src="./assets/icons/close.svg" alt="Close icon" />
+            </button>
+            <ul class="toolbar__links-list">
+              <li class="toolbar__links-list-item"><a href="#portfolio">Portfolio</a></li>
+              <li class="toolbar__links-list-item"><a href="#about">About</a></li>
+              <li class="toolbar__links-list-item"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -369,5 +374,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
