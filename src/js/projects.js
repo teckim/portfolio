@@ -1,5 +1,6 @@
 const portfolioSection = document.getElementById('portfolio');
 const projectModal = document.getElementById('modal');
+const projectModalCloseButton = document.querySelector('.project-modal__close-button');
 
 function gentateProjectHtml({
   id, imageName, title, description, technologies,
@@ -81,4 +82,8 @@ projects.forEach((project, index) => {
   document.getElementById(`project-button-${index}`).addEventListener('click', () => {
     projectModal.style.display = 'flex';
   });
+});
+
+projectModalCloseButton.addEventListener('click', () => {
+  projectModal.style.display = 'none';
 });
