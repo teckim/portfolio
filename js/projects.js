@@ -1,5 +1,5 @@
 const portfolioSection = document.getElementById('portfolio');
-const appearModal = document.getElementById('modal');
+const projectModal = document.getElementById('modal');
 
 function gentateProjectHtml({
   id, imageName, title, description, technologies,
@@ -32,19 +32,53 @@ function gentateProjectHtml({
   `;
 }
 
-const projectsHtml = gentateProjectHtml({
-  name: 1,
-  imageName: 'snapshoot-1.jpg',
-  title: 'test',
-  description: 'test',
-  technologies: ['html', 'css', 'js'],
-});
-
-portfolioSection.innerHTML = projectsHtml;
-
-projects.forEach((project,index) => {
-  document.getElementById(`modal-btn-${index}`).addEventListener('click', () => 
+const projects = [
   {
-      appearModal.style.display = "flex";
-  })    
+    title: 'Multi-Post Stories',
+    imageName: 'snapshoot-1.jpg',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['html', 'css', 'js'],
+  },
+  {
+    title: 'Tonic',
+    imageName: 'snapshoot-1.jpg',
+    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    technologies: ['html', 'css', 'js'],
+  },
+  {
+    title: 'Facebook 360',
+    imageName: 'snapshoot-1.jpg',
+    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    technologies: ['html', 'css', 'js'],
+  },
+  {
+    title: 'Uber Navigation',
+    imageName: 'snapshoot-1.jpg',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['html', 'css', 'js'],
+  },
+  {
+    title: 'Multi-Post Stories',
+    imageName: 'snapshoot-1.jpg',
+    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    technologies: ['html', 'css', 'js'],
+  },
+  {
+    title: 'Tonic',
+    imageName: 'snapshoot-1.jpg',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['html', 'css', 'js'],
+  },
+];
+
+portfolioSection.innerHTML = projects
+  .map((project, index) => gentateProjectHtml({ id: index, ...project }))
+  .join('');
+
+projects.forEach((project, index) => {
+  // portfolioSection.innerHTML += gentateProjectHtml({ id: index, ...project });
+
+  document.getElementById(`project-button-${index}`).addEventListener('click', () => {
+    projectModal.style.display = 'flex';
+  });
 });
