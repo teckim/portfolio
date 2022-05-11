@@ -143,7 +143,7 @@
 
   .project-modal .project-modal__description {
     float: left;
-    max-width: 60%;
+    max-width: 50%;
     margin-right: 24px;
     font-size: var(--text-base);
   }

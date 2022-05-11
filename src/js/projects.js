@@ -76,7 +76,7 @@ portfolioSection.innerHTML = projects
   .map((project, index) => gentateProjectHtml({ id: index, ...project }))
   .join('');
 
-projects.forEach((project, index) => {
+projects.forEach((_, index) => {
   document.getElementById(`project-button-${index}`).addEventListener('click', () => {
     projectModal.style.display = 'flex';
   });
