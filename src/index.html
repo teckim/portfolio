@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/components/social-stack.css" />
     <link rel="stylesheet" href="./css/components/headline.css" />
     <link rel="stylesheet" href="./css/components/project-card.css" />
+    <link rel="stylesheet" href="./css/components/project-modal.css" />
     <link rel="stylesheet" href="./css/components/about-me.css" />
     <link rel="stylesheet" href="./css/components/contact.css" />
     <!-- utilities -->
@@ -54,7 +55,7 @@
       </div>
     </header>
     <section class="headline">
-      <div class="headline__wrapper">
+      <div class="headline__wrapper container">
         <h1 class="headline__title">
           I’m Hakim <br />
           Glad to see you!
@@ -93,6 +94,56 @@
             </a>
           </li>
         </ul>
+      </div>
+    </section>
+    <section>
+      <div class="project-modal" id="modal">
+        <div class="project-modal__container">
+          <button class="project-modal__close-button" type="button">
+            <img src="./assets/icons/close-black.svg" alt="Close modal icon" />
+          </button>
+          <div class="project-modal__header">
+            <h2 class="project-modal__header-title">Tonic</h2>
+            <div class="project-modal__header-subtitle">
+              <span>CANOPY</span>
+              <span>Back End Dev</span>
+              <span>2015</span>
+            </div>
+          </div>
+          <div class="project-modal__image-container">
+            <img
+              class="project-modal__image"
+              src="./assets/images/snapshoot-1.jpg"
+              alt="Snapshoot 1"
+            />
+          </div>
+          <div class="project-modal__body">
+            <p class="project-modal__description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essent
+            </p>
+            <ul class="project-modal__tags-list">
+              <li class="project-modal__tags-list-item">html</li>
+              <li class="project-modal__tags-list-item">css</li>
+              <li class="project-modal__tags-list-item">javascript</li>
+            </ul>
+            <hr class="project-modal__separator">
+            <div class="project-modal__actions">
+              <button class="button" type="button">
+                <span>See Live</span>
+                <img class="button__icon" src="./assets/icons/external-link.svg" alt="External link icon">
+              </button>
+              <button class="button" type="button">
+                <span>See Source</span>
+                <img class="button__icon" src="./assets/icons/github-primary.svg" alt="Github primary icon">
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section id="portfolio" class="works container">
@@ -381,5 +432,6 @@
     <!-- Scripts -->
     <script src="./js/menu.js"></script>
     <script src="./js/contactForm.js"></script>
+    <script src="./js/projects.js"></script>
   </body>
 </html>

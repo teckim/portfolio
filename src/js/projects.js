@@ -85,4 +85,3 @@ projects.forEach((_, index) => {
 projectModalCloseButton.addEventListener('click', () => {
   projectModal.style.display = 'none';
 });
-
