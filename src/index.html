@@ -388,6 +388,7 @@
             </p>
           </div>
           <form
+            id="form"
             class="contact__form"
             action="https://formspree.io/f/mrgjopje"
             method="post"
@@ -401,6 +402,7 @@
               required
             />
             <input
+              id="email"
               class="contact__form-input"
               type="email"
               placeholder="Your email"
@@ -415,6 +417,7 @@
               name="message"
               required
             ></textarea>
+            <small class="contact__form-errors" id="errors"></small>
             <button
               class="contact__form-button button button--secondary"
               type="submit"
@@ -428,6 +431,7 @@
 
     <!-- Scripts -->
     <script src="./js/menu.js"></script>
+    <script src="./js/contactForm.js"></script>
     <script src="./js/projects.js"></script>
   </body>
 </html>
