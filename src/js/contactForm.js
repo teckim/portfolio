@@ -14,3 +14,15 @@ form.addEventListener('submit', (event) => {
     errors.innerText = 'Email must be in lowercase';
   }
 });
+
+let formObj = {};
+
+function populateStorage() {
+  formObj = {
+    Name: form.user.value,
+    Email: form.email.value,
+    Message: form.message.value,
+  };
+  const convertObj = JSON.stringify(formObj);
+  localStorage.setItem('FormData', convertObj);
+}
