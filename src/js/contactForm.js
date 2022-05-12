@@ -15,33 +15,33 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-let formObj = {};
+let formData = {};
 
 function populateStorage() {
-  formObj = {
-    Name: form.user.value,
-    Email: form.email.value,
-    Message: form.message.value,
+  formData = {
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value,
   };
-  const convertObj = JSON.stringify(formObj);
-  localStorage.setItem('FormData', convertObj);
+
+  localStorage.setItem('FORM_DATA', JSON.stringify(formData));
 }
 
-// Populate FormFields
 function getDataFromLocalStorage() {
-  let data = null;
-  data = localStorage.getItem('FormData');
-  data = JSON.parse(data);
-  form.user.value = data.Name;
-  form.email.value = data.Email;
-  form.message.value = data.Message;
+  let data = localStorage.getItem('FORM_DATA');
+
+  if (data) {
+    data = JSON.parse(data);
+    form.name.value = data.name;
+    form.email.value = data.email;
+    form.message.value = data.message;
+  }
 }
 
-window.onload = function () {
-  form.user.addEventListener('input', populateStorage);
+window.onload = () => {
+  form.name.addEventListener('input', populateStorage);
   form.email.addEventListener('input', populateStorage);
   form.message.addEventListener('input', populateStorage);
-  if (localStorage.getItem('FormData') !== null) {
-    getDataFromLocalStorage();
-  }
+
+  getDataFromLocalStorage();
 };
