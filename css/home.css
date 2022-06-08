@@ -4,9 +4,10 @@
 
 .works {
   padding: 114px 24px;
-  display: grid;
-  grid-template: repeat(4, 1fr) / 1fr;
-  grid-row-gap: 88px;
+}
+
+.works > *:not(:last-child) {
+  margin-bottom: 88px;
 }
 
 .about {
