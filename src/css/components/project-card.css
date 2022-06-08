@@ -92,11 +92,16 @@
 
   .project-card .project-card__image {
     max-width: 544px;
-    align-self: flex-start;
+    align-self: center;
   }
 
   .project-card .project-card__body {
     padding: 24px;
+    margin-right: 22px;
+    margin-right: 0;
+  }
+
+  .project-card:nth-child(2n+1) .project-card__body {
     margin-left: 22px;
   }
 

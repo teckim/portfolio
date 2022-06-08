@@ -63,8 +63,9 @@
 }
 
 .project-modal .project-modal__image {
-  width: 100%;
-  margin: 12px 0;
+  display: block;
+  margin: 12px auto;
+  max-height: 100%;
 }
 
 .project-modal .project-modal__body > *:not(:last-child) {
