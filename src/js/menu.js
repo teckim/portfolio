@@ -13,4 +13,8 @@ function close() {
 
 menubutton.addEventListener('click', open);
 closeButton.addEventListener('click', close);
-links.forEach((link) => link.addEventListener('click', close));
+links.forEach((link) => {
+  if (window.innerWidth >= 768) return;
+
+  link.addEventListener('click', close);
+});
