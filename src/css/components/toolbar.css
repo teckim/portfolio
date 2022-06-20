@@ -21,6 +21,11 @@
   font-weight: var(--font-bold);
   font-size: 18px;
   line-height: 20px;
+  transition: letter-spacing linear 0.5s;
+}
+
+.toolbar .toolbar__logo:hover {
+  letter-spacing: 2px;
 }
 
 .toolbar .toolbar__menu-button {
